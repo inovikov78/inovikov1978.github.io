@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=900px, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="/">Home</a>
+    <p>
+        <h2>How to restore previous version of the config</h2><br>
+        <a
+            href="https://buildateam.myjetbrains.com/youtrack/projects/7c8721f9-11c4-4736-ab1a-a6cd1e97bd43">https://buildateam.myjetbrains.com/youtrack/projects/7c8721f9-11c4-4736-ab1a-a6cd1e97bd43</a><br>
+        <a href="https://cloud.google.com/storage/docs/gsutil">https://cloud.google.com/storage/docs/gsutil</a><br>
+        <a
+            href="https://cloud.google.com/storage/docs/gsutil/addlhelp/ObjectVersioningandConcurrencyControl">https://cloud.google.com/storage/docs/gsutil/addlhelp/ObjectVersioningandConcurrencyControl</a><br>
+        <a
+            href="https://cloud.google.com/storage/docs/object-versioning">https://cloud.google.com/storage/docs/object-versioning</a><br>
+        <strong>Bucket Version Control Info</strong> <br>
+        в общем в клауде есть бекап jsonов за все время - контроль версий. и получается что если конфиг затерли - можно
+        по дате и размеру файла понять какой из истории файл надо разворачивать. потом его
+
+        <div class="code">gsutil ls -la gs://custom-product-builder/30986414/1729117519923.json # list all revisions
+        </div>
+
+        копируешь с клауда локально
+        <div class="code">gsutil cp gs://custom-product-builder/30986414/1729117519923.json#1551277183334910
+            1729117519923.json .</div>
+
+        и потом через браузерный интерфейс закинуть можно файл назад на клауд в бакет магазина и заменить активный
+        конфиг рабочим файлом.<br>
+    </p>
+</body>
+
+</html>

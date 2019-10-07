@@ -1,22 +1,22 @@
 .code {
-    background-color: lightgray;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
-    padding: 10px;
-    margin: 5px 0;
-   
-
+  background-color: lightgray;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  padding: 10px;
+  margin: 5px 0;
 }
 
-body {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5rem;
-    padding: 0 15px;
-
+.body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+  padding: 15px 15px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: bisque;
+  min-height: 400px;
 }
 
 h1 {
-    text-align: center;
-
+  text-align: center;
 }
