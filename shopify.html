@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
-
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
   <!--[if lt IE 9]>
@@ -26,10 +26,10 @@
     <strong>Bucket Version Control Info</strong> <br>
     в  общем в клауде есть бекап jsonов за все время -  контроль версий. и получается что если конфиг затерли - можно по дате и размеру файла понять какой из истории файл надо разворачивать. потом его
     
-    <div class="code">gsutil ls -la gs://custom-product-builder/30986414/1729117519923.json # list all revisions</div>
+    <pre class="prettyprint">gsutil ls -la gs://custom-product-builder/30986414/1729117519923.json # list all revisions</pre>
     
     копируешь с клауда локально 
-    <div class="code">gsutil cp gs://custom-product-builder/30986414/1729117519923.json#1551277183334910 1729117519923.json .</div>
+    <pre class="prettyprint">gsutil cp gs://custom-product-builder/30986414/1729117519923.json#1551277183334910 1729117519923.json .</pre>
     
     и потом через браузерный интерфейс закинуть можно файл назад на клауд в бакет магазина и заменить активный конфиг рабочим файлом.
 </p>
