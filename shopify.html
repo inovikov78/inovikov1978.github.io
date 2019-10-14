@@ -9,29 +9,21 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
-  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-<p>
-    <h2>How to restore previous version of the config</h2><br>
-    <a href="https://buildateam.myjetbrains.com/youtrack/projects/7c8721f9-11c4-4736-ab1a-a6cd1e97bd43">https://buildateam.myjetbrains.com/youtrack/projects/7c8721f9-11c4-4736-ab1a-a6cd1e97bd43</a><br>
-    <a href="https://cloud.google.com/storage/docs/gsutil">https://cloud.google.com/storage/docs/gsutil</a><br>
-    <a href="https://cloud.google.com/storage/docs/gsutil/addlhelp/ObjectVersioningandConcurrencyControl">https://cloud.google.com/storage/docs/gsutil/addlhelp/ObjectVersioningandConcurrencyControl</a><br>
-    <a href="https://cloud.google.com/storage/docs/object-versioning">https://cloud.google.com/storage/docs/object-versioning</a><br>
-    <strong>Bucket Version Control Info</strong> <br>
-    в  общем в клауде есть бекап jsonов за все время -  контроль версий. и получается что если конфиг затерли - можно по дате и размеру файла понять какой из истории файл надо разворачивать. потом его
-    
-    <pre class="prettyprint">gsutil ls -la gs://custom-product-builder/30986414/1729117519923.json # list all revisions</pre>
-    
-    копируешь с клауда локально 
-    <pre class="prettyprint">gsutil cp gs://custom-product-builder/30986414/1729117519923.json#1551277183334910 1729117519923.json .</pre>
-    
-    и потом через браузерный интерфейс закинуть можно файл назад на клауд в бакет магазина и заменить активный конфиг рабочим файлом.
-</p>
-    
+  <div class="body">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="./recover_prev_version.html">How to restore previous version of the config</a></li>
+      <li><a href="./lic_for_magento.html">How to add license for Magento version of the Product Builder</a></li>
+    </ul>
+
+
+  </div>
 </body>
 
 </html>
